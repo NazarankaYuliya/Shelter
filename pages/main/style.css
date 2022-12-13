@@ -105,7 +105,7 @@ body {
   width: 100%;
   height: 908px;
   background: no-repeat;
-  background-image: url(/assets/images/start-screen-gradient-background.png);
+  background-image: url(../../assets/images/start-screen-gradient-background.png);
   background-size: 100%;
 }
 
@@ -271,10 +271,10 @@ body {
   border-radius: 100%;
 }
 .left__button {
-  background: no-repeat center url(/assets/icons/Arrow_left.svg);
+  background: no-repeat center url(../../assets/icons/Arrow_left.svg);
 }
 .right__button {
-  background: no-repeat center url(/assets/icons/Arrow_right.svg);
+  background: no-repeat center url(../../assets/icons/Arrow_right.svg);
 }
 .pets__button_primary {
   text-align: center;
@@ -329,31 +329,31 @@ body {
 }
 
 .help__item:nth-child(1)::before {
-  background-image: url(/assets/icons/icon-pet-food.svg);
+  background-image: url(../../assets/icons/icon-pet-food.svg);
 }
 .help__item:nth-child(2)::before {
-  background-image: url(/assets/icons/icon-transportation.svg);
+  background-image: url(../../assets/icons/icon-transportation.svg);
 }
 .help__item:nth-child(3)::before {
-  background-image: url(/assets/icons/icon-toys.svg);
+  background-image: url(../../assets/icons/icon-toys.svg);
 }
 .help__item:nth-child(4)::before {
-  background-image: url(/assets/icons/icon-bowls-and-cups.svg);
+  background-image: url(../../assets/icons/icon-bowls-and-cups.svg);
 }
 .help__item:nth-child(5)::before {
-  background-image: url(/assets/icons/icon-shampoos.svg);
+  background-image: url(../../assets/icons/icon-shampoos.svg);
 }
 .help__item:nth-child(6)::before {
-  background-image: url(/assets/icons/icon-vitamins.svg);
+  background-image: url(../../assets/icons/icon-vitamins.svg);
 }
 .help__item:nth-child(7)::before {
-  background-image: url(/assets/icons/icon-medicines.svg);
+  background-image: url(../../assets/icons/icon-medicines.svg);
 }
 .help__item:nth-child(8)::before {
-  background-image: url(/assets/icons/icon-collars-leashes.svg);
+  background-image: url(../../assets/icons/icon-collars-leashes.svg);
 }
 .help__item:nth-child(9)::before {
-  background-image: url(/assets/icons/icon-sleeping-area.svg);
+  background-image: url(../../assets/icons/icon-sleeping-area.svg);
 }
 
 /* ----- Section donation ----- */
@@ -413,7 +413,7 @@ body {
   height: 23px;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(/assets/icons/credit-card.svg);
+  background-image: url(../../assets/icons/credit-card.svg);
 }
 
 .credit__card:hover {
@@ -432,7 +432,7 @@ body {
   width: 100%;
   max-height: 350px;
   background: no-repeat;
-  background-image: url(/assets/images/footer-gradient-background.png);
+  background-image: url(../../assets/images/footer-gradient-background.png);
   background-size: 100%;
 }
 .footer__content {
@@ -470,7 +470,7 @@ body {
   width: 40px;
   height: 32px;
   background: no-repeat center;
-  background-image: url(/assets/icons/icon-email.svg);
+  background-image: url(../../assets/icons/icon-email.svg);
 }
 .footer__phone {
   width: 239px;
@@ -488,7 +488,7 @@ body {
   width: 40px;
   height: 32px;
   background: no-repeat center;
-  background-image: url(/assets/icons/icon-phone.svg);
+  background-image: url(../../assets/icons/icon-phone.svg);
 }
 .footer__location {
   display: flex;
@@ -513,5 +513,5 @@ body {
   width: 22px;
   height: 32px;
   background: no-repeat center;
-  background-image: url(/assets/icons/icon-marker.svg);
+  background-image: url(../../assets/icons/icon-marker.svg);
 }
