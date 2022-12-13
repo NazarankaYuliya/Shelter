@@ -370,6 +370,9 @@ body {
   column-gap: 30px;
   padding: 80px 0px 100px;
 }
+.donation__image {
+  width: 505px;
+}
 .dog__image {
   display: block;
   margin: auto 0;
