@@ -515,3 +515,8 @@ body {
   background: no-repeat center;
   background-image: url(../../assets/icons/icon-marker.svg);
 }
+.footer__adress:hover,
+.footer__email:hover,
+.footer__phone:hover {
+  text-decoration: underline;
+}
