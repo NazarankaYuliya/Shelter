@@ -284,7 +284,7 @@ body {
   display: flex;
   justify-content: space-between;
   column-gap: 160px;
-  padding-top: 41px;
+  padding-top: 40px;
 }
 .footer__content_inner {
   max-height: 310px;
@@ -372,6 +372,7 @@ body {
 .footer__image {
   max-width: 300px;
   max-height: 310px;
+  overflow: hidden;
 }
 .footer__puppy {
   width: 100%;

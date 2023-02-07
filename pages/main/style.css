@@ -774,6 +774,7 @@ body {
 .footer__image {
   max-width: 300px;
   max-height: 310px;
+  overflow: hidden;
 }
 .footer__puppy {
   width: 100%;
