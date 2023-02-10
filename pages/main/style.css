@@ -846,11 +846,11 @@ body {
 
 @media (max-width: 767px) and (min-width: 320px) {
   .footer {
-    max-height: 811px;
+    max-height: 813px;
   }
   .footer__content {
     flex-direction: column;
-    padding-top: 32px;
+    padding-top: 30px;
     row-gap: 45px;
     align-items: center;
   }
