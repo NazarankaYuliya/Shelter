@@ -78,6 +78,10 @@ body {
   justify-content: space-between;
   max-height: 60px;
 }
+
+.menu__icon {
+  display: none;
+}
 .header__list {
   display: flex;
   justify-content: space-between;
@@ -98,21 +102,59 @@ body {
   border-bottom: 3px solid #f1cdb3;
   padding-bottom: 2.5px;
 }
+.header__logo {
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.logo_link {
+  height: 100%;
+}
 .logo__title {
   font-size: 32px;
   letter-spacing: 2px;
-  line-height: 110%;
-  margin-bottom: 10px;
   color: #f1cdb3;
+  margin: 10px 0;
 }
 .logo_subtitle {
   font-size: 13px;
   color: #ffffff;
   letter-spacing: 1.3px;
-  line-height: 15px;
-  padding-left: 4px;
+}
+
+@media (max-width: 1279px) and (min-width: 768px) {
+  .header {
+    top: 30px;
+  }
 }
 @media (max-width: 767px) and (min-width: 320px) {
+  .menu__icon {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 22px;
+    cursor: pointer;
+    z-index: 5;
+    margin-right: 43px;
+  }
+  .menu__icon span {
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background-color: #f1cdb3;
+    top: 50%;
+  }
+  .menu__icon span:nth-child(1) {
+    top: 0;
+  }
+  .menu__icon span:nth-child(3) {
+    top: 100%;
+  }
+  .header {
+    top: 30px;
+  }
   .header__nav {
     display: none;
   }
@@ -241,7 +283,7 @@ body {
 
 .section__about {
   background-color: #fff;
-  max-height: 588px;
+  height: 588px;
   padding: 80px 0px 100px;
 }
 .about__content {
@@ -256,8 +298,6 @@ body {
 }
 .about__pets {
   width: 100%;
-  /* display: block;
-  margin: auto 0; */
 }
 .about__text {
   max-width: 430px;
@@ -268,12 +308,12 @@ body {
 }
 .about__title {
   max-width: 370px;
-  letter-spacing: 0.13rem;
+  letter-spacing: 0.12rem;
 }
 
 @media (max-width: 1279px) and (min-width: 768px) {
   .section__about {
-    max-height: 1048px;
+    height: 1048px;
   }
   .about__content {
     flex-direction: column-reverse;
@@ -282,7 +322,7 @@ body {
 }
 @media (max-width: 767px) and (min-width: 320px) {
   .section__about {
-    max-height: 974px;
+    height: 974px;
     padding: 45px 0px;
   }
   .about__content {
@@ -290,7 +330,7 @@ body {
     row-gap: 42px;
   }
   .about__text {
-    max-height: 494px;
+    height: 494px;
     align-items: center;
   }
   .about__title {
@@ -323,7 +363,7 @@ body {
   text-align: center;
 }
 .pets__title_text {
-  letter-spacing: 0.13rem;
+  letter-spacing: 0.12rem;
   color: #545454;
 }
 .pets__slider {
@@ -408,8 +448,8 @@ body {
     height: 791px;
   }
   .pets__content {
-    padding: 42px 0px;
-    row-gap: 42px;
+    padding: 44px 0px;
+    row-gap: 43px;
   }
   .pets__card:nth-child(n + 2) {
     display: none;
@@ -451,7 +491,7 @@ body {
   text-align: center;
 }
 .help__title_text {
-  letter-spacing: 0.13rem;
+  letter-spacing: 0.12rem;
   color: #545454;
 }
 
@@ -503,13 +543,14 @@ body {
     max-height: 745px;
   }
   .help__content {
-    padding: 42px 0;
+    padding: 44px 0;
     row-gap: 42px;
   }
   .help__list {
-    justify-content: space-between;
-    column-gap: 30px;
+    display: grid;
+    grid-template-columns: auto auto;
     row-gap: 30px;
+    column-gap: 30px;
   }
   .help__item {
     width: 130px;
@@ -638,18 +679,18 @@ body {
 }
 @media (max-width: 767px) and (min-width: 320px) {
   .section__donation {
-    max-height: 542px;
+    max-height: 543px;
   }
   .donation__content {
-    max-width: 300px;
     flex-direction: column-reverse;
     row-gap: 42px;
-    padding: 42px 0px;
+    padding: 45px 0px;
   }
   .donation__image {
     max-width: 260px;
   }
   .donation__text {
+    height: 281px;
     align-items: center;
     text-align: center;
   }
@@ -667,6 +708,7 @@ body {
     word-spacing: normal;
     letter-spacing: 0.05rem;
     text-align: left;
+    align-items: center;
   }
   .donation__information {
     max-width: 280px;
@@ -703,7 +745,7 @@ body {
 }
 .footer__title {
   max-width: 278px;
-  letter-spacing: 0.129rem;
+  letter-spacing: 0.12rem;
   color: #ffffff;
 }
 .footer__email {
@@ -808,7 +850,7 @@ body {
   }
   .footer__content {
     flex-direction: column;
-    padding-top: 30px;
+    padding-top: 32px;
     row-gap: 45px;
     align-items: center;
   }
