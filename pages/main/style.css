@@ -53,12 +53,12 @@ body {
 
 @media (max-width: 1279px) and (min-width: 768px) {
   .wrapper {
-    max-width: 708px;
+    min-width: 708px;
   }
 }
-@media (max-width: 767px) and (min-width: 320px) {
+@media (max-width: 767px) {
   .wrapper {
-    max-width: 300px;
+    max-width: 767px;
   }
   h3 {
     font-size: 25px;
@@ -138,8 +138,11 @@ body {
   .header {
     top: 30px;
   }
+  .header__wrapper {
+    padding: 0 30px;
+  }
 }
-@media (max-width: 767px) and (min-width: 320px) {
+@media (max-width: 767px) {
   .menu__icon {
     display: block;
     position: relative;
@@ -170,6 +173,9 @@ body {
   }
   .header {
     top: 30px;
+  }
+  .header__wrapper {
+    padding: 0 10px;
   }
   .header__nav {
     display: none;
@@ -226,7 +232,7 @@ body {
 .start__screen {
   width: 100%;
   height: auto;
-  max-height: 908px;
+  /* max-height: 908px; */
   background-image: url(../../assets/images/start-screen-gradient-background.png);
   background-size: cover;
 }
@@ -240,10 +246,12 @@ body {
 }
 
 .start__screen_image {
-  max-width: 698px;
+  display: flex;
+  /* max-width: 698px; */
 }
 .start__image {
   width: 100%;
+  height: 100%;
 }
 .start__screen_content {
   padding-top: 163px;
@@ -289,7 +297,7 @@ body {
     top: 30px;
   }
   .start__screen {
-    max-height: 1165px;
+    /* max-height: 1165px; */
   }
   .start__screen_wrapper {
     flex-direction: column;
@@ -298,7 +306,8 @@ body {
   }
   .start__screen_image {
     align-self: flex-end;
-    max-width: 569px;
+    margin-right: 30px;
+    width: 74%;
   }
   .start__screen_content {
     padding-top: 0;
@@ -309,12 +318,12 @@ body {
   }
 }
 
-@media (max-width: 767px) and (min-width: 320px) {
+@media (max-width: 767px) {
   .header {
     top: 30px;
   }
   .start__screen {
-    max-height: 823px;
+    min-height: 823px;
   }
   .start__screen_wrapper {
     flex-direction: column;
@@ -329,8 +338,8 @@ body {
   }
   .start__screen_image {
     align-self: flex-end;
-    max-width: 260px;
-    max-height: 272px;
+    width: 83%;
+    margin: 0 10px 0 50px;
   }
   .start__title {
     max-width: 200px;
@@ -338,13 +347,16 @@ body {
     text-align: center;
     letter-spacing: 0.09rem;
   }
+  .start__subtitle {
+    margin: 0 10px;
+  }
 }
 
 /* ----- Section about -----*/
 
 .section__about {
   background-color: #fff;
-  height: 588px;
+  max-height: 588px;
   padding: 80px 0px 100px;
 }
 .about__content {
@@ -361,7 +373,7 @@ body {
   width: 100%;
 }
 .about__text {
-  max-width: 430px;
+  width: 35.8%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -374,31 +386,35 @@ body {
 
 @media (max-width: 1279px) and (min-width: 768px) {
   .section__about {
-    height: 1048px;
+    max-height: 1048px;
   }
   .about__content {
     flex-direction: column-reverse;
     row-gap: 80px;
   }
+  .about__text {
+    width: 56%;
+  }
 }
-@media (max-width: 767px) and (min-width: 320px) {
+@media (max-width: 767px) {
   .section__about {
-    height: 974px;
-    padding: 45px 0px;
+    max-height: 974px;
+    padding: 42px 0px;
   }
   .about__content {
     flex-direction: column-reverse;
     row-gap: 42px;
   }
   .about__text {
-    height: 494px;
+    width: 100%;
     align-items: center;
   }
   .about__title {
+    max-width: 300px;
     text-align: center;
   }
   .about__subtitle {
-    max-width: 270px;
+    margin: 0 25px;
     text-align: justify;
   }
   .about__pets {
@@ -410,7 +426,7 @@ body {
 
 .section__pets {
   background-color: #f6f6f6;
-  height: 877px;
+  min-height: 877px;
 }
 .pets__content {
   padding: 80px 0px 100px;
@@ -500,23 +516,27 @@ body {
   .pets__card:nth-child(n + 3) {
     display: none;
   }
+  .pets__slider {
+    margin: 0 30px;
+  }
   .pets__slider_container {
     column-gap: 40px;
   }
 }
-@media (max-width: 767px) and (min-width: 320px) {
+@media (max-width: 767px) {
   .section__pets {
-    height: 791px;
+    min-height: 791px;
   }
   .pets__content {
-    padding: 44px 0px;
+    padding: 42px 0px;
     row-gap: 43px;
+    align-items: center;
   }
   .pets__card:nth-child(n + 2) {
     display: none;
   }
   .pets__slider {
-    max-height: 507px;
+    width: 270px;
     flex-wrap: wrap;
     justify-content: center;
     column-gap: 75px;
@@ -538,10 +558,10 @@ body {
 .section__help {
   background-color: #fff;
   max-height: 611px;
+  padding: 80px 0px 100px;
 }
 
 .help__content {
-  padding: 80px 0px 100px;
   display: flex;
   flex-direction: column;
   row-gap: 60px;
@@ -599,12 +619,12 @@ body {
     width: 170px;
   }
 }
-@media (max-width: 767px) and (min-width: 320px) {
+@media (max-width: 767px) {
   .section__help {
     max-height: 745px;
+    padding: 42px 0;
   }
   .help__content {
-    padding: 44px 0;
     row-gap: 42px;
   }
   .help__list {
@@ -660,7 +680,8 @@ body {
 /* ----- Section donation ----- */
 .section__donation {
   background-color: #f6f6f6;
-  max-height: 462px;
+  min-height: 462px;
+  padding: 80px 0px 100px;
 }
 .donation__content {
   max-width: 915px;
@@ -669,7 +690,6 @@ body {
   justify-content: center;
   align-items: center;
   column-gap: 30px;
-  padding: 80px 0px 100px;
 }
 .donation__image {
   max-width: 505px;
@@ -730,7 +750,7 @@ body {
 
 @media (max-width: 1279px) and (min-width: 768px) {
   .section__donation {
-    max-height: 783px;
+    min-height: 783px;
   }
 
   .donation__content {
@@ -738,17 +758,17 @@ body {
     row-gap: 60px;
   }
 }
-@media (max-width: 767px) and (min-width: 320px) {
+@media (max-width: 767px) {
   .section__donation {
-    max-height: 543px;
+    min-height: 542px;
+    padding: 42px 0px;
   }
   .donation__content {
     flex-direction: column-reverse;
     row-gap: 42px;
-    padding: 45px 0px;
   }
   .donation__image {
-    max-width: 260px;
+    width: 80%;
   }
   .donation__text {
     height: 281px;
@@ -905,23 +925,23 @@ body {
   }
 }
 
-@media (max-width: 767px) and (min-width: 320px) {
+@media (max-width: 767px) {
   .footer {
-    max-height: 813px;
+    max-height: 809px;
   }
   .footer__content {
     flex-direction: column;
     padding-top: 30px;
-    row-gap: 45px;
+    row-gap: 40px;
     align-items: center;
   }
   .footer__content_inner {
+    max-width: 300px;
     flex-wrap: wrap;
     row-gap: 40px;
     max-height: 470px;
     padding: 0;
     align-items: center;
-    margin: 0 auto;
   }
   .footer__contacts {
     margin: 0 11px;
