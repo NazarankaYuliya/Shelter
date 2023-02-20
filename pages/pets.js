@@ -1,3 +1,4 @@
+export { pets }
 let pets = [
   {
     name: 'Katrine',
