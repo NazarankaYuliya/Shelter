@@ -38,16 +38,12 @@ function generateCards() {
 generateCards()
 
 right__button.addEventListener('click', function () {
-  let pets__card = document.querySelectorAll('.pets__card')
-  pets__card.forEach((el) => el.remove())
   selectedPets = newPets
   newPets = []
   generateCards()
 })
 
 left__button.addEventListener('click', function () {
-  let pets__card = document.querySelectorAll('.pets__card')
-  pets__card.forEach((el) => el.remove())
   selectedPets = newPets
   newPets = []
   generateCards()
