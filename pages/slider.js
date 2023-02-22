@@ -40,7 +40,6 @@ generateCards()
 right__button.addEventListener('click', function () {
   selectedPets = newPets
   newPets = []
-  // generateCards()
   slideLeft()
 })
 
