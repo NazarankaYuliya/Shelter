@@ -460,6 +460,21 @@ body {
   border-radius: 9px;
   margin: 0 auto;
 }
+.slide_left {
+  transform: translate3d(-100px, 0, 0);
+  opacity: 0;
+  cursor: pointer;
+  transition: 0.4s all ease-in-out;
+  z-index: 0;
+}
+
+.slide_right {
+  transform: translate3d(100px, 0, 0);
+  opacity: 0;
+  cursor: pointer;
+  transition: 0.4s all ease-in-out;
+  z-index: 0;
+}
 .pets__card:nth-child(n + 4) {
   display: none;
 }

@@ -40,11 +40,31 @@ generateCards()
 right__button.addEventListener('click', function () {
   selectedPets = newPets
   newPets = []
-  generateCards()
+  // generateCards()
+  slideLeft()
 })
 
 left__button.addEventListener('click', function () {
   selectedPets = newPets
   newPets = []
-  generateCards()
+  slideRight()
 })
+
+function slideLeft() {
+  document
+    .querySelectorAll('.pets__card')
+    .forEach((card) => card.classList.add('slide_left'))
+
+  setTimeout(function () {
+    generateCards()
+  }, 300)
+}
+
+function slideRight() {
+  document
+    .querySelectorAll('.pets__card')
+    .forEach((card) => card.classList.add('slide_right'))
+  setTimeout(function () {
+    generateCards()
+  }, 300)
+}
