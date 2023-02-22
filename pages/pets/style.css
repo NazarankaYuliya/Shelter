@@ -322,6 +322,7 @@ body {
   border-radius: 100px;
   text-align: center;
   color: #292929;
+  background-color: transparent;
 }
 .pagination__btn:disabled {
   border: 2px solid #cdcdcd;
